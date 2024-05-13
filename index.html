@@ -10,7 +10,15 @@
   </head>
   <body>
     <main>
-      <p style="background-image: url('w7.jpg');"> 
+      <style>
+        body{
+          background-image:url('w7.jpg');
+          background-attachment:fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+      
       <div class="window active" style="align-self: center; max-width: 50%;">
         <div class="title-bar">
           <div class="title-bar-text">Linuxlonestar website</div>
@@ -20,7 +28,7 @@
             <button aria-label="Close"></button>
           </div>
         </div>
-        <div class="window-body has-space" style="min-height: 100%">
+        <div class="window-body has-space">
           <!-- this is the main body for html code-->
           <ul role="menubar">
             <li role="menuitem" tabindex="0" onclick="location.href='index.html';">Home</li>
