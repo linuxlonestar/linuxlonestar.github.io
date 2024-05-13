@@ -10,28 +10,34 @@
   </head>
   <body>
     <main>
-
-      <div class="title-bar">
-        <div class="title-bar-text">Linuxlonestar website</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Restore"></button>
-          <button aria-label="Close"></button>
+      <div class="window active" style="max-width: 300px">
+        <div class="title-bar">
+          <div class="title-bar-text">Linuxlonestar website</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Restore"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <!-- this is the main body for html code-->
+          <ul role="menubar">
+            <li role="menuitem" tabindex="0" onclick="location.href='index.html';">Home</li>
+            <li role="menuitem" tabindex="0" onclick="location.href='projects.html';">Projects</li>
+            <li role="menuitem" tabindex="0" onclick="location.href='mc.html';">MC server</li>
+            <li role="menuitem" tabindex="0" onclick="location.href='https://www.youtube.com/@linuxlonestar4796';">YT</li>
+          </ul>
+    
+    
+    
+          <a href="projects.html" >
+            <button>Projects</button>
+          </a>
         </div>
       </div>
+      
 
-      <ul role="menubar">
-        <li role="menuitem" tabindex="0" onclick="location.href='index.html';">Home</li>
-        <li role="menuitem" tabindex="0" onclick="location.href='projects.html';">Projects</li>
-        <li role="menuitem" tabindex="0" onclick="location.href='mc.html';">MC server</li>
-        <li role="menuitem" tabindex="0" onclick="location.href='https://www.youtube.com/@linuxlonestar4796';">YT</li>
-      </ul>
-
-
-
-	    <a href="projects.html" >
-        <button>Projects</button>
-      </a>
+      
 
     </main>
 	<script src="index.js"></script>
