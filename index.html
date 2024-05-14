@@ -10,12 +10,11 @@
   </head>
   <body>
     <main>
-      <!--if (confirm("Close Window?")) {
-            close();
-          }-->
       <script>
         function close_window() {
-          close();
+          if (confirm("Close Window?")) {
+            close();
+          }
         }
       </script>
       <style>
