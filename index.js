@@ -1,3 +1,9 @@
+const yourElement = document.querySelector('#yourElement');
+
+    yourElement.addEventListener("dragstart", function(event) {
+      event.dataTransfer.setData("text", event.target.id);
+    });
+
 document.addEventListener("DOMContentLoaded", function() {
     const tabs = document.querySelectorAll("menu[role=tablist]");
     
@@ -38,3 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
       );
       article.removeAttribute("hidden");
     }
+
+    
+    
+    
