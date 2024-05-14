@@ -10,6 +10,13 @@
   </head>
   <body>
     <main>
+      <script>
+        function close_window() {
+          if (confirm("Close Window?")) {
+            close();
+          }
+        }
+      </script>
       <style>
         body{
           background-image:url('./w7.jpg');
@@ -28,7 +35,9 @@
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Restore"></button>
-            <button aria-label="Close" onclick="close();"></button>
+            <a href="javascript:close_window();">
+              <button aria-label="Close"></button>
+            </a>
           </div>
         </div>
         <div class="window-body has-space">
@@ -93,7 +102,9 @@
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Restore"></button>
-            <button aria-label="Close" onclick="close();"></button>
+            <a href="javascript:close_window();">
+              <button aria-label="Close"></button>
+            </a>
           </div>
         </div>
         <div class="window-body has-space">
@@ -129,7 +140,9 @@
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Restore"></button>
-            <button aria-label="Close" onclick="close();"></button>
+            <a href="javascript:close_window();">
+              <button aria-label="Close"></button>
+            </a>
           </div>
         </div>
         <div class="window-body has-space">
