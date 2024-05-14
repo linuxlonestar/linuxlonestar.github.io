@@ -64,21 +64,16 @@
 
 
           <section class="tabs">
-            <menu role="tablist" aria-label="Main tabs">
-              <button role="tab" aria-controls="tab-A" aria-selected="true">Welcome</button>
-              <button role="tab" aria-controls="tab-B">Support</button>
+            <menu role="tablist" aria-label="Tabs Template">
+              <button role="tab" aria-controls="tab-A" aria-selected="true">Tab A</button>
+              <button role="tab" aria-controls="tab-B">Tab B</button>
+              <button role="tab" aria-controls="tab-C">Tab C</button>
+              <button role="tab" aria-controls="tab-D" disabled>Tab D</button>
             </menu>
-            <article role="tabpanel" id="tab-A">
-              <h4>Welcome to the linuxlonestar website</h4>
-              <b>This website serves as a portfolio for my projects, as well as a download site for things I make.<br> My Minecraft Java server is also hosted here.</b>
-              <p></p>
-            </article>
-            <article role="tabpanel" id="tab-B" hidden>
-              <p></p>
-              <b>For website feature requests, email feature@linuxlonestar.com.<br><br>
-                For bug reports or questions email support@linuxlonestar.com. </b>
-              <p></p>
-            </article>
+            <article role="tabpanel" id="tab-A">Tab A is active</article>
+            <article role="tabpanel" id="tab-B" hidden>Tab B is active</article>
+            <article role="tabpanel" id="tab-C" hidden>Tab C is active</article>
+            <article role="tabpanel" id="tab-D" hidden>Tab D is inactive</article>
           </section>
 
           
